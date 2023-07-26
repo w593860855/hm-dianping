@@ -17,6 +17,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+        // 测试git
         // 登录拦截器
         registry.addInterceptor(new LoginIntercepter())
                 .excludePathPatterns(
